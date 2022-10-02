@@ -526,7 +526,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 	 */
 	public function join($table, $cond, $type = '', $escape = NULL)
 	{
-		if ($type !== '')
+		if ($type !== '' && !is_null($type) && !empty($type))
 		{
 			$type = strtoupper(trim($type));
 

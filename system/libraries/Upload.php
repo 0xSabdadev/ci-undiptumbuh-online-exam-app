@@ -374,6 +374,7 @@ class CI_Upload {
 	 */
 	public function do_upload($field = 'userfile')
 	{
+		
 		// Is $_FILES[$field] set? If not, no reason to continue.
 		if (isset($_FILES[$field]))
 		{
